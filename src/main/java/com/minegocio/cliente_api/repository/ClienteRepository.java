@@ -18,6 +18,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     // Verifica si existe un cliente con el mismo número de identificación
     boolean existsByIdentificationNumber(String identificationNumber);
 
-    // También puede ser útil obtener un cliente por identificación exacta
+    // Cliente por identificación exacta
     Optional<Cliente> findByIdentificationNumber(String identificationNumber);
 }
