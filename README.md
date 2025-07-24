@@ -1,7 +1,7 @@
 # Cliente API - Mi Negocio
 
-Este proyecto es una API REST construida con Spring Boot para gestionar clientes y sus direcciones.
- 
+El siguiente proyectoes una API REST construida con Spring Boot para gestionar clientes y sus direcciones.
+
 ## Tecnologías utilizadas
 
 - Java 17
@@ -10,6 +10,7 @@ Este proyecto es una API REST construida con Spring Boot para gestionar clientes
 - Spring Data JPA
 - Lombok
 - Git + GitHub
+- Creación y edición de codigo con IntelliJ IDEA
 
 ## Estructura del proyecto
 
