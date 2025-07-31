@@ -50,7 +50,7 @@ class ClienteServiceTest {
 
     @Test
     void crearClientesinid() {
-        System.out.println("✅ Test: Crear cliente cuando número de identificación NO existe");
+        System.out.println("Test: Crear cliente cuando número de identificación NO existe");
         ClienteCrearDTO dto = crearDtoEjemplo();
         when(clienteRepository.existsByIdentificationNumber(dto.getIdentificationNumber())).thenReturn(false);
         when(clienteRepository.save(any(Cliente.class))).thenAnswer(i -> {

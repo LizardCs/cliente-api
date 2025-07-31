@@ -21,6 +21,13 @@ public class ClienteController {
         return clienteService.buscarClientes(filtro);
     }
 
+    // Lista de clientes
+    @GetMapping
+    public List<ClienteResponseDTO> listarClientes(@RequestParam(required = false, defaultValue = "") String filtro) {
+        return clienteService.buscarClientes(filtro);
+    }
+
+
     @PostMapping
     public ResponseEntity<ClienteResponseDTO> crearCliente(@RequestBody ClienteCrearDTO dto) {
         ClienteResponseDTO clienteCreado = clienteService.crearClienteConDireccion(dto);
