@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")  //Conexion con Angular
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:5173"})  //Conexion con Angular y VUE3
 @RestController
 @RequestMapping("/api/clientes")
 @RequiredArgsConstructor
